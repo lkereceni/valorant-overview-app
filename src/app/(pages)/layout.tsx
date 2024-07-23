@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { montserrat } from "@/fonts/fonts";
+import { Navigation } from "@/components/navigation/navigation";
+import background from "@/assets/background.png";
+
+import styles from "./layout.module.css";
+
+import "@/app/styles/globals.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Valorant Overview App",
@@ -13,7 +20,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={`${montserrat.className} ${styles.body}`}>
+        <Navigation />
+        {children}
+        <Image
+          className={styles.background}
+          src={background}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </body>
     </html>
   );
 }

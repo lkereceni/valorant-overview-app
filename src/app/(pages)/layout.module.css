@@ -1,0 +1,4 @@
+.background {
+  background-color: var(--valorant-pink);
+  z-index: -1;
+}
