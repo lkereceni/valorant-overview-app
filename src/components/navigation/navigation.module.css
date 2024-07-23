@@ -1,0 +1,28 @@
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--valorant-grey);
+  width: 100%;
+  padding: 45px 72px;
+  gap: 86px;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.navigation-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.vertical-hr {
+  width: 2px;
+  display: inline-block;
+}
