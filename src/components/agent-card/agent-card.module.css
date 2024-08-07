@@ -1,0 +1,61 @@
+.agent-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 512px;
+  height: 100%;
+  background-color: transparent;
+  padding: 0 16px 16px 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .agent-card-background {
+    background-color: #fff;
+    border: 2px solid var(--valorant-grey);
+  }
+
+  &:hover .agent-name {
+    -webkit-text-stroke-color: var(--valorant-grey);
+  }
+}
+
+.agent-card-background {
+  width: 100%;
+  height: 100%;
+  background-color: var(--valorant-grey);
+  clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%, 0 16px);
+}
+
+.agent-name-country-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  writing-mode: vertical-lr;
+  margin-top: -580px;
+  margin-left: -50px;
+}
+
+.agent-name {
+  font-weight: 600;
+  font-size: 72px;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  z-index: 5;
+}
+
+.agent-portrait {
+  object-fit: cover;
+}
+
+.agent-abilities {
+  position: absolute;
+  bottom: 0;
+  margin-left: 32px;
+}

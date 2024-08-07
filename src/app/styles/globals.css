@@ -1,5 +1,6 @@
 :root {
   --valorant-grey: #1f2326;
+  --valorant-light-grey: #f8f8f8;
   --valorant-pink: #ff4656;
 }
 
@@ -7,4 +8,5 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }

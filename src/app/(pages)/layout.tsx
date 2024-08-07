@@ -27,8 +27,8 @@ export default function RootLayout({
           className={styles.background}
           src={background}
           alt="Background Image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
         />
       </body>
     </html>
