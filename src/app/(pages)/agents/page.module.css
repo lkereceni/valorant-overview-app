@@ -1,0 +1,21 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  margin: 113px 0;
+}
+
+.agents {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 72px;
+  scrollbar-width: none;
+}
+
+.agents > *:last-child {
+  margin-right: 20px;
+}
